@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dot.net\\Examen\\WebApplication1\\WebApplication1.csproj",
-      "projectName": "WebApplication1",
-      "projectPath": "D:\\dot.net\\Examen\\WebApplication1\\WebApplication1.csproj",
+      "projectUniqueName": "D:\\dot.net\\Examen\\WebApplication1\\Examen.csproj",
+      "projectName": "Examen",
+      "projectPath": "D:\\dot.net\\Examen\\WebApplication1\\Examen.csproj",
       "packagesPath": "C:\\Users\\Szabi\\.nuget\\packages\\",
       "outputPath": "D:\\dot.net\\Examen\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",
