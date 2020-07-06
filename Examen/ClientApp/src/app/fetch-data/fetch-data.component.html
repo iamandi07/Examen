@@ -1,24 +1,83 @@
-<h1 id="tableLabel">Weather forecast</h1>
+<h1 id="tableLabel">Examen</h1>
 
 <p>This component demonstrates fetching data from the server.</p>
 
-<p *ngIf="!forecasts"><em>Loading...</em></p>
+<p *ngIf="!persons"><em>Loading...</em></p>
+<p *ngIf="!inspectionPlans"><em>Loading...</em></p>
+<p *ngIf="!equipments"><em>Loading...</em></p>
+<p *ngIf="!calibrations"><em>Loading...</em></p>
 
-<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="forecasts">
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="persons">
   <thead>
     <tr>
-      <th>Date</th>
-      <th>Temp. (C)</th>
-      <th>Temp. (F)</th>
-      <th>Summary</th>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>PhoneNumber</th>
+      <th>Email</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let forecast of forecasts">
-      <td>{{ forecast.date }}</td>
-      <td>{{ forecast.temperatureC }}</td>
-      <td>{{ forecast.temperatureF }}</td>
-      <td>{{ forecast.summary }}</td>
+    <tr *ngFor="let person of persons">
+      <td>{{ person.name }}</td>
+      <td>{{ person.surname }}</td>
+      <td>{{ person.phoneNumber }}</td>
+      <td>{{ person.email }}</td>
+    </tr>
+  </tbody>
+</table>
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="inspectionPlans">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Temperature</th>
+      <th>Humidity</th>
+      <th>Pressure</th>
+      <th>PersonId</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let inspectionPlan of inspectionPlans">
+      <td>{{ inspectionPlan.description }}</td>
+      <td>{{ inspectionPlan.temperature }}</td>
+      <td>{{ inspectionPlan.humidity }}</td>
+      <td>{{ inspectionPlan.pressure }}</td>
+      <td>{{ inspectionPlan.personId }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="equipments">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>EquipementType</th>
+      <th>Model</th>
+      <th>SerialNumber</th>
+      <th>CalibrationDate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let equipment of equipments">
+      <td>{{ equipment.description }}</td>
+      <td>{{ equipment.equipementType }}</td>
+      <td>{{ equipment.model }}</td>
+      <td>{{ equipment.serialNumber }}</td>
+      <td>{{ equipment.calibrationDate }}</td>
+    </tr>
+  </tbody>
+</table>
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="calibrations">
+  <thead>
+    <tr>
+      <th>EquipmentId</th>
+      <th>PersonId</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let calibration of calibrations">
+      <td>{{ calibration.equipmentId }}</td>
+      <td>{{ calibration.personId }}</td>
     </tr>
   </tbody>
 </table>
