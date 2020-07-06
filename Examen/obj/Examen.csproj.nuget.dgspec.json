@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dot.net\\Examen\\WebApplication1\\Examen.csproj": {}
+    "D:\\dot.net\\Examen\\Examen\\Examen.csproj": {}
   },
   "projects": {
-    "D:\\dot.net\\Examen\\WebApplication1\\Examen.csproj": {
+    "D:\\dot.net\\Examen\\Examen\\Examen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dot.net\\Examen\\WebApplication1\\Examen.csproj",
+        "projectUniqueName": "D:\\dot.net\\Examen\\Examen\\Examen.csproj",
         "projectName": "Examen",
-        "projectPath": "D:\\dot.net\\Examen\\WebApplication1\\Examen.csproj",
+        "projectPath": "D:\\dot.net\\Examen\\Examen\\Examen.csproj",
         "packagesPath": "C:\\Users\\Szabi\\.nuget\\packages\\",
-        "outputPath": "D:\\dot.net\\Examen\\WebApplication1\\obj\\",
+        "outputPath": "D:\\dot.net\\Examen\\Examen\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Szabi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,40 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[8.6.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
